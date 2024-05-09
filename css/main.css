@@ -29,9 +29,14 @@
 
 .indexbody {
     background-image: url('https://wallpapercrafter.com/desktop1/611331-digital-art-dark-lines-backgrounds-pattern-full.jpg');
-    background-size: cover;
+    background-repeat: repeat;
+    background-size: 100%;
+    /* Fotoğraf boyutunu küçültün */
     background-position: center;
+    /* İçeriği merkezlemek için */
 }
+
+
 
 .bd-placeholder-img {
     font-size: 1.125rem;
@@ -75,3 +80,72 @@
 /* end alnging  */
 
 /* featurres */
+.main-title {
+    position: relative;
+    /* Ensure positioning context for the ::before pseudo-element */
+}
+
+/* Add margin to the h2 element */
+.main-title h2 {
+    margin-bottom: 20px;
+}
+
+.main-title::after {
+    content: '';
+    width: 120px;
+    height: 2px;
+    background-color: #e42424;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.simple-icons--handshake-protocol {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23e42424' d='m20.348 7.829l-1.491-2.65l2.889.001c.077 0 .167.051.21.12l1.533 2.529zm-5.344 16.046c-.07.125-.161.125-.19.125h-2.956l4.591-8.243a.442.442 0 0 0-.384-.657l-7.825.01l-1.556-2.694h11.397c.248-.017.362-.158.393-.231l1.879-3.473h3.101zm-3.91-.314l-1.522-2.506c-.023-.037-.034-.128.014-.214l2.694-4.853l3.034-.004zM5.92 18.403l-1.508-2.68l1.52-2.848l1.524 2.64c-.474.891-1.213 2.283-1.536 2.888m-3.668.417a.27.27 0 0 1-.207-.12L.51 16.17h3.141l1.491 2.65l-2.891-.001zM8.996.126C9.066 0 9.156 0 9.186 0h2.968L7.551 8.243c-.11.167-.11.712.58.657l7.63-.01c.527.92 1.002 1.752 1.51 2.642H5.922a.47.47 0 0 0-.397.234l-1.879 3.522h-3.1zm3.917.323l1.515 2.496c.023.037.034.128-.015.214L11.72 8.012l-3.032.004zm5.166 5.145l1.509 2.68l-1.538 2.844c-.517-.905-.997-1.745-1.529-2.673c.328-.6 1.195-2.189 1.558-2.851'/%3E%3C/svg%3E");
+}
+
+.features .box {
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.features .box::before {
+    content: attr(data-work);
+    position: absolute;
+    background-color: #e42424a7;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+    font-size: 1.5rem;
+    transform: translateX(calc(-100% - 5px));
+}
+
+.features .box:hover::before {
+    transform: translateX(0);
+}
+
+.features .box {
+    background-color: #3e0000;
+}
+
+.social-icons a {
+    text-decoration: none;
+    border-bottom: none;
+    /* Çizgiyi kaldırma */
+    font-size: 24px;
+    /* İkon boyutunu büyütme */
+    color: #e42424;
+    /* Kırmızı renk */
+}
