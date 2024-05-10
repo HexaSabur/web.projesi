@@ -76,13 +76,13 @@ a {
     }
 }
 
-.profile {
+.header {
     grid-column: 1 / -1;
     margin-bottom: 2rem;
 }
 
-.group-1,
-.group-2 {
+.section,
+.article {
     display: flex;
     flex-direction: column;
     gap: 5rem;
