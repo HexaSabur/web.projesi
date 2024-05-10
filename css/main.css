@@ -149,3 +149,20 @@
     color: #e42424;
     /* Kırmızı renk */
 }
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons {
+    /* Keep social icons aligned to the right */
+    margin-left: auto;
+}
+
+/* Adjust margin for the "Bize Ulaş" link */
+.footer-content a {
+    margin-right: 20px;
+    /* Adjust the margin as needed */
+}
