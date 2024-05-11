@@ -1,0 +1,42 @@
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.415);
+    /* Set background color to black */
+    color: white;
+    /* Set text color to white */
+    padding: 20px;
+    /* Add padding for spacing */
+    border-radius: 10px;
+    /* Add border radius for rounded corners */
+}
+
+h1 {
+    color: red;
+}
+
+button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.line {
+    width: 50%;
+    margin: 20px auto;
+    border-top: 1px solid red;
+}
