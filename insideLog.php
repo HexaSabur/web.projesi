@@ -1,9 +1,9 @@
 <?php 
    session_start();
 
-   include("php/config.php");
+   include("config.php");
    if(!isset($_SESSION['valid'])){
-    header("Location: index.php");
+    header("Location: login.php");
    }
 ?>
 <!DOCTYPE html>
@@ -18,7 +18,7 @@
 <body>
     <div class="nav">
         <div class="logo">
-            <p><a href="home.php">Logo</a> </p>
+            <p><a href="login.php">Logo</a> </p>
         </div>
 
         <div class="right-links">

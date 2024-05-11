@@ -15,7 +15,7 @@
         <div class="box form-box">
             <?php 
              
-              include("php/config.php");
+              include("config.php");
               if(isset($_POST['submit'])){
                 $email = mysqli_real_escape_string($con,$_POST['email']);
                 $password = mysqli_real_escape_string($con,$_POST['password']);
@@ -32,11 +32,11 @@
                     echo "<div class='message'>
                       <p>Wrong Username or Password</p>
                        </div> <br>";
-                   echo "<a href='index.php'><button class='btn'>Go Back</button>";
+                   echo "<a href='login.php'><button class='btn'>Go Back</button>";
          
                 }
                 if(isset($_SESSION['valid'])){
-                    header("Location: home.php");
+                    header("Location: insideLog.php");
                 }
               }else{
 
@@ -59,7 +59,7 @@
                     <input type="submit" class="btn" name="submit" value="Login" required>
                 </div>
                 <div class="links">
-                    Don't have account? <a href="register.php">Sign Up Now</a>
+                    Don't have account? <a href="siginup.php">Sign Up Now</a>
                 </div>
             </form>
         </div>
